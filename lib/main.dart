@@ -31,11 +31,9 @@ class WelcomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // ✅ LOGO REMPLACÉ PAR VOTRE IMAGE
-            // Assurez-vous que le chemin est correct et que l'image est déclarée dans pubspec.yaml
             Image.asset(
               'assets/images/uchiha.jpeg',
-              width: 120, // Ajustez la taille comme vous le souhaitez
+              width: 120, // Ajustement de la taille de l'image
             )
                 .animate()
                 .scale(duration: 800.ms)
@@ -44,7 +42,7 @@ class WelcomePage extends StatelessWidget {
 
             const SizedBox(height: 40),
 
-            // Le titre qui apparaît en glissant
+            // affichage du titre en glissant 
             const Text(
               'Bienvenue chez les Uchiha!',
               style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
@@ -55,7 +53,7 @@ class WelcomePage extends StatelessWidget {
 
             const SizedBox(height: 20),
 
-            // Description avec un effet de brillance (shimmer) en boucle
+            // le texte apparaissant avec un effet de scintillement
             const Text(
               'Découvrez la magie du charingan',
               textAlign: TextAlign.center,
